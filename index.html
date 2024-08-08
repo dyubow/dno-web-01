@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
+    <meta charset="utf-8" />
+    <style>
+     html, body {
+      margin: 0;
+      padding: 0;
+      cursor: crosshair;
+    } 
+
+    canvas {
+      display: block;
+    }
+
+    h1 {
+      position: absolute;
+      top: 30rem;   
+      left: 3rem;
+      z-index: 2;  
+      color: deeppink;
+      font-style: italic;
+    }
+
+    p {
+      position: absolute;
+      width: 50vw;
+      top: 33rem;
+      left: 3rem;
+      z-index: 2;
+      color: white;
+      
+    }
+    </style>
+
+  </head>
+  <body>
+    <main>
+      <h1> Hola mundo!</h1>
+      <p> Decidí tomar este ramo ya que el año pasado fue muy interesante la parte de diseño web y aprender lo básico de HTML, por lo que
+      me gustaría poder profundizar más para poder crear páginas y experimentar :D </p>
+    </main>
+   <script>
+     function setup() {
+      createCanvas(windowWidth, windowHeight);
+      background(255,154,196);
+     }
+
+    function draw() {
+     stroke(255,20,random(160));
+     line(pmouseX,pmouseY,mouseX,mouseY);
+    }
+   </script>
+  </body>
+</html>
